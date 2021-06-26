@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+/* OVERALL CSS */
+html {
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(20,20,20);
+}
+p {
+  color: white;
+}
+body {
+margin-left: 25px;
+margin-right: 25px;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+a {
+  text-decoration: underline;
+  color: white;
+}
+img {
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+footer {
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: .75rem;
+}
+/* CUSTOM CSS */
+.tnr {
+	font-family: 'Times New Roman', Times, serif !important;
+}
+.center {
+  text-align: center;
+}
+.margin-centered{
+	margin-left: auto; margin-right: auto;
+}
+.width-minimum {
+	display: inline-block;
+}
+.titlelink {
+  text-decoration: none;
+  color: white;
+}
+.wideline {
+  background-color: magenta;
+  border-color: transparent;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 2px;
+}
+.space {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+/* footer squish */
+.stupidfooter {
+  line-height: .50rem;
+}
+@media screen and (min-width: 600px) {
+  .stupidfooter {
+    font-size: 1rem;
+  }
+}
+/* topbar stuff */
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .cornertitle {
+    width: 100%;
+    text-align: center;
+  }
+}
