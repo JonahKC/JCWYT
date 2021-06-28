@@ -9,9 +9,6 @@ html {
 p {
   color: white;
 }
-body {
-
-}
 h1 {
   color: white;
 }
@@ -153,8 +150,12 @@ form {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-  padding: 0px 0;
+    padding: 0px 0;
     display: inherit;
+  }
+  .projectbox {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 /* FORMS */
