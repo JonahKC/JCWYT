@@ -143,6 +143,12 @@ form {
   height: 150px;
 
 }
+@media screen and (max-width: 800px) {
+	.projecttext {
+		font-size: 3.9vw;
+		display: inline-block;
+	}
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -159,8 +165,9 @@ form {
   .projectbox {
     padding-left: 30px;
     padding-right: 30px;
-    height: 1rem;
+    height: auto;
   }
+
   .columntextbox {
     height: auto;
   }
