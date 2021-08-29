@@ -137,6 +137,19 @@ form {
     -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
     box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
 }
+/*use this for columns with two text lines*/
+.column2{
+	float: left;
+  width: 50%;
+  background-color: rgb(40,40,40);
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
+    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
+    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
+}
+
 .columntextbox {
   padding-left: 20px;
   padding-right: 20px;
@@ -149,6 +162,7 @@ form {
 		display: inline-block;
 	}
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -161,6 +175,7 @@ form {
     width: 100%;
     padding: 0px 0;
     display: inherit;
+		height: auto;
   }
   .projectbox {
     padding-left: 30px;
@@ -171,7 +186,12 @@ form {
   .columntextbox {
     height: auto;
   }
+	.projecttext {
+		font-size: 1.5rem; /* <-- WTFFFF WHY ISNT IT JUST A NORMAL H1 I DONT CHANGE IT ANYWHERE GRRRR*/
+		display: block;
+	}
 }
+
 /* FORMS */
 input[type=text] {
   border: 3px solid rgb(20,20,20);
