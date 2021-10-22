@@ -196,10 +196,12 @@ form {
 input[type=text] {
   border: 3px solid rgb(20,20,20);
   border-radius: 4px;
+	outline: none;
 }
 input[type=email] {
   border: 3px solid rgb(20,20,20);
   border-radius: 4px;
+	outline: none;
 }
 input[type=button], input[type=submit], input[type=reset] {
   background-color: white;
@@ -209,5 +211,8 @@ input[type=button], input[type=submit], input[type=reset] {
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
-
+	outline: none;
+}
+input:focus, textarea:focus, select:focus{
+	outline: none;
 }
