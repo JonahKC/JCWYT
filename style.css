@@ -6,9 +6,9 @@
 /* ■ ■ Variables ■ ■ */
 
 :root {
-  --primary: magenta;
-  --secondary: rgb(40,40,40);;
-  --background: rgb(20,20,20);
+  --primary: #fff;
+  --secondary: #282828;;
+  --background: #141414;
   --text: #fff;
 	--invertedtext: #000;
   --mainfont: 'Nunito', sans-serif;
@@ -74,150 +74,6 @@ table, th, td {
   border-radius: 5px !important;
   background-color: var(--secondary);
 	padding: 5px 5px 5px 5px;
-}
-/* Fancy Button 1 */
-* {
-  box-sizing: border-box;
-}
-*::before, *::after {
-  box-sizing: border-box;
-}
-.fancybutton1 {
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: 1.3rem;
-  font-family: inherit;
-	cursor: pointer;
-}
-.fancybutton1.learn-more {
-  width: 14rem;
-  height: auto;
-}
-.fancybutton1.learn-more .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: var(--primary);
-  border-radius: 1.625rem;
-}
-.fancybutton1.learn-more .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: var(--invertedtext);
-}
-.fancybutton1.learn-more .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
-.fancybutton1.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.25rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid var(--invertedtext);
-  border-right: 0.125rem solid var(--invertedtext);
-  transform: rotate(45deg);
-}
-.fancybutton1.learn-more .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: var(--text);
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
-}
-.fancybutton1:hover .circle {
-  width: 100%;
-}
-.fancybutton1:hover .circle .icon.arrow {
-  background: var(--invertedtext);
-  transform: translate(1rem, 0);
-}
-.fancybutton1:hover .button-text {
-  color: var(--invertedtext);
-}
-/* Fancy Button 2 */
-
-.fancybutton2 {
-  position: relative;
-  height: 45px;
-  width: 150px;
-  margin: 10px 7px;
-  padding: 5px 5px;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: var(--text);
-  border: 2px var(--primary) solid;
-  border-radius: 4px;
-  text-transform: uppercase;
-  outline: 0;
-  overflow:hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-}
-.fancybutton2:hover {
-  color: var(--invertedtext);
-}
-.fancybutton2:before {
-  content: "";
-  position: absolute;
-  background: var(--primary);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-}
-.fancybutton2:hover:before {
-  top: 0;
-}
-/* Fancy Button 3 */
-.fancybutton3 {
-  color: var(--text);
-  border: 2px solid var(--primary);
-  border-radius: 5px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 var(--primary);
-  -webkit-transition: ease-out .8s;
-  -moz-transition: ease-out .8s;
-  transition: ease-out .8s;
-}
-.fancybutton3:hover {
-  box-shadow: inset 400px 0 0 0 var(--primary);
 }
 /* ■ ■ Forms ■ ■ */
 
@@ -326,12 +182,7 @@ input[type=radio]:checked {
 }
 /* Makes clear hr element that disappears on mobile */
 .phonespace {
-  background-color: transparent;
-  border-color: transparent;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 1rem;
+  display: none;
 }
 /* Makes a fancy hr element line 100% of the screen width */
 .largeline {
@@ -378,10 +229,10 @@ input[type=radio]:checked {
 /* Gives content an accented background color and some padding, and centers everything inside */
 .highlight {
   background-color: var(--secondary);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 /* Puts content in a nice little rounded box with a black border */
@@ -404,17 +255,9 @@ input[type=radio]:checked {
 .right {
   text-align: right;
 }
-/* Makes your content responsively 100% wide */
-.resp-100 {
-  width: 100%;
-}
-/* Makes your content responsively 50% wide */
-.resp-50 {
-  width: 50%;
-}
-/* Makes your content responsively 33% wide */
-.resp-33 {
-  width: 33%;
+/* Makes text align left */
+.left {
+  text-align: left;
 }
 /* Makes parallax image behind your content */
 .parallax-div {
@@ -426,8 +269,7 @@ input[type=radio]:checked {
   display: flex;
   flex-direction: column;
 }
-
-/* Make text fade in after 2 seconds */
+/* Makes text fade in after 2 seconds */
 .fade-in-2 {
   display: inline-block;
   animation: fadeIn linear 2s;
@@ -436,14 +278,14 @@ input[type=radio]:checked {
   -o-animation: fadeIn linear 2s;
   -ms-animation: fadeIn linear 2s;
 }
-/* Makes text fade in after 4 seconds */
-.fade-in-4 {
+/* Makes text fade in after 8 seconds */
+.fade-in-8 {
   display: inline-block;
-  animation: fadeIn linear 4s;
-  -webkit-animation: fadeIn linear 4s;
-  -moz-animation: fadeIn linear 4s;
-  -o-animation: fadeIn linear 4s;
-  -ms-animation: fadeIn linear 4s;
+  animation: fadeIn linear 8s;
+  -webkit-animation: fadeIn linear 8s;
+  -moz-animation: fadeIn linear 8s;
+  -o-animation: fadeIn linear 8s;
+  -ms-animation: fadeIn linear 8s;
 }
 /* Technical fade-y stuff */
 @keyframes fadeIn {
@@ -466,34 +308,6 @@ input[type=radio]:checked {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-/* CSS for the text the tooltip goes on */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted var(--text);
-  padding: 0 0 0 0;
-}
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--background);
-  color: var(--text);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-.tooltip .tooltiptext {
-  width: 120px;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px; /* If you change this, use half of the width (for example, 120/2 = 60), to center the tooltip */
-}
 
 /* ■ ■ CSS That Changes On Mobile ■ ■ */
 
@@ -504,41 +318,44 @@ input[type=radio]:checked {
     text-decoration: none;
   }
   .phonespace {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    width: 1%;
-    height: 0rem;
+    display: block;
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 1rem;
   }
   .highlight {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
   }
   .box {
-  word-break: break-all;
-  width: 90%;
+    word-break: break-all;
+    width: 90%;
   }
   .image-holder {
-  width: 100%; 
-  min-height: 110vh !important;
-  padding-top: 100px;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+    width: 100%; 
+    min-height: 110vh !important;
+    padding-top: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
   }
 
   .parallax-div {
-  background-attachment: initial;
-  width: 100%; 
-  min-height: 110vh !important;
-  padding-top: 100px;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+    background-attachment: initial;
+    width: 100%; 
+    min-height: 110vh !important;
+    padding-top: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -639,69 +456,27 @@ input[type=radio]:checked {
 .column-2 {
   float: left;
   width: 50%;
-	height: 300px;
-  background-color: rgb(40,40,40);
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-}
-/* Project columns */
-.column-p {
-  float: left;
-  width: 50%;
-	height: 200px;
-  background-color: rgb(40,40,40);
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
 }
 /* Three columns */
 .column-3{
   float: left;
   width: 32%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* Four columns */
 .column-4{
   float: left;
   width: 25%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-}
-.twolinecolumn{
-	float: left;
-  width: 50%;
-  background-color: rgb(40,40,40);
-  text-align: center;
   padding-top: 45px;
   padding-bottom: 45px;
-    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    -moz-box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
-    box-shadow:inset 0px 0px 0px 5px rgb(20,20,20);
 }
+
 /*  ■ ■ Responsive Columns ■ ■ */
 @media screen and (max-width: 800px) {
   .row {
@@ -709,67 +484,27 @@ input[type=radio]:checked {
   }
   .column-2 {
     width: 100%;
-  	padding-top: 50px;
-  	padding-bottom: 50px;
-  	padding-left: 25px;
-  	padding-right: 25px;
-    display: block !important;
-    height: auto;
-  }
-  .column-p {
-    width: 100%;
-  	padding-top: 50px;
-  	padding-bottom: 50px;
-  	padding-left: 25px;
-  	padding-right: 25px;
+    padding: 0px 0;
     display: block !important;
     height: auto;
   }
   .column-3 {
     width: 100%;
-  	padding-top: 50px;
-  	padding-bottom: 50px;
-  	padding-left: 25px;
-  	padding-right: 25px;
+    padding: 0px 0;
     display: block !important;
     height: auto;
   }
   .column-4 {
     width: 100%;
-  	padding-top: 50px;
-  	padding-bottom: 50px;
-  	padding-left: 25px;
-  	padding-right: 25px;
-    display: block !important;
-    height: auto;
-  }
-  .twolinecolumn {
-    width: 100%;
-  	padding-top: 50px;
-  	padding-bottom: 50px;
-  	padding-left: 25px;
-  	padding-right: 25px;
+    padding: 0px 0;
     display: block !important;
     height: auto;
   }
 }
 
-/* CUSTOM CSS */
-.tnr {
-	font-family: 'Times New Roman', Times, serif !important;
-  color: white;
-}
-.logo {
-  top: 15px;
-}
-.projecttext {
-	font-size: 2rem;
-	display: block;
-}
-@media screen and (max-width: 600px) {
-  .projectbox {
-    padding-left: 30px;
-    padding-right: 30px;
-    height: auto;
-  }
+/* Accessability */
+
+:focus-visible {
+  outline: 1px solid black;
+  padding: 5px 5px 5px 5px;
 }

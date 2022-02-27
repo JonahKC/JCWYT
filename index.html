@@ -1,72 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>JCWYT - jcwyt.com</title> <!-- Page Title -->
+    <link rel="icon" href="/images/jcwyt_black.webp"> <!-- Favicon -->
+    <meta name="description" content='JCWYT is a Seattle-based "company" that makes apps, games and other projects.'> <!-- Page Description -->
+    <meta name="robots" content="index, follow"> <!-- Index Preferences --> 
+    <link rel="canonical" href="https://jcwyt.com/"> <!-- Canonical Domain -->
+    <meta charset="UTF-8"> <!-- Unicode Type -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Screen Width --> 
+  	<link rel="stylesheet" type="text/css" href="style.css" media="screen">  
+		<link rel="stylesheet" type="text/css" href="lightstyle.css" media="screen"> <!-- Use jonahstrap.css file (replace this line if you use method #2-->
 
-<head>
-	<title>JCWYT | jcwyt.com</title>
-	<meta name="description" content='JCWYT is a Seattle-based "company," making apps, games and other projects.'>
-  <meta property="og:image" content="https://jcwyt.com/jcwyt_logo_black.png">
-	<meta name="robots" content="index, follow">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, 	initial-scale=1.0">
-	<link rel="icon" href="jcwyt_logo_black.png">
-	<link rel="canonical" href="https://jcwyt.com">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-T864MLZM2Z">
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-   	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', 'G-T864MLZM2Z');
-	</script>
-</head>
+    <!-- Social Media Embeds -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jcwyt.com/"> <!-- Canonical Domain -->
+    <meta property="og:title" content="JCWYT - jcwyt.com"> <!-- Page Title -->
+    <meta property="og:description" content='JCWYT is a Seattle-based "company" that makes apps, games and other projects.'> <!-- Page Description -->
+    <meta property="og:image" content="https://jcwyt.com/images/embed.png"> <!-- Social Media Embed (ideally 16x9 ratio, and must be link) -->
+	
+		<meta name="theme-color" content="#141414">
+		<link rel="apple-touch-icon" href="/images/jcwyt_black.webp">
+	
+    <!-- Special Twitter Embeds -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jcwyt.com/"> <!-- Canonical Domain -->
+    <meta property="twitter:title" content="JCWYT - jcwyt.com"> <!-- Page Title -->
+    <meta property="twitter:description" content='JCWYT is a Seattle-based "company" that makes apps, games and other projects.'> <!-- Page Description -->
+    <meta property="twitter:image" content="https://jcwyt.com/images/embed.png"> <!-- Social Media Embed (ideally 16x9 ratio, and must be link) -->
 
-<body>
-	<div class="topbar">
-		<h1 class="toptitle"><a class="nodeco" href="https://jcwyt.com"><img class="logo" src="jcwyt_logo_white.png" alt="Logo" width="30" height="30"> JCWYT</a></h1>
-	    </div>
-    <hr class="largeline">
-    <div class="highlight">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T864MLZM2Z">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+    	function gtag(){dataLayer.push(arguments);}
+    	gtag('js', new Date());
+    	gtag('config', 'G-T864MLZM2Z');
+
+		</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div style="min-height: 100vh;" class="vertcenter-up">
+      <img src="/images/jcwyt_white.webp" width="100px" height="100px" alt="jcwyt logo">
+      <br>
+      <a href="#" scrollto='#jonahwashere' style="cursor: pointer;"><img src="/images/icons/down.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="20px" height="20px" class="fade-in-2"  alt="down arrow"></a>
+    </div>
+    
+    <div style="min-height: 100vh;" class="vertcenter-up" id="jonahwashere"> 
+      <a href="https://fooaaahh.jcwyt.com" target="_blank" class="nodeco center" title="FOOAAAHH!">
+        <img src="https://fooaaahh.jcwyt.com/pictures/airplane.png" width="100px" height="100px" alt="fooaaahh! airplane logo">
+        <h2>Check out our latest project, FOOAAAHH!</h2>
+      </a>
+      <br>
+      <a href="#" scrollto='#jonahwasheretoo' style="cursor: pointer;"><img src="/images/icons/down.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="20px" height="20px" alt="down arrow"></a>
+    </div>
+      
+    <div style="min-height: 100vh;" class="vertcenter-up" id="jonahwasheretoo">
+
       <hr class="space">
-      <h2>Check out our most recent project:</h2>
-      <h1><a target="_blank" href="https://fooaaahh.jcwyt.com"><img class="logo" src="https://fooaaahh.jcwyt.com/pictures/airplane.png" alt="Logo" width="40" height="40"> FOOAAAHH! »</a></h1>
+
+      <a href="projects" class="nodeco center" title="All of our Projects">
+        <img src="/images/icons/projects.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="50px" height="50px" alt="projects icon">
+        <h2>All of our Projects</h2>
+      </a>
+        
       <hr class="space">
-      </div>
-    <hr class="largeline">
-      <div class="row">
-        <div class="column-p">
-          <h1><a href="/projects">All Projects »</a></h1>
-          </div>
-        <div class="column-p">
-          <h1><a href="/aboutus">About Us »</a></h1>
-          </div>
-        </div>
-      <div class="row">
-        <div class="column-p">
-          <h1><a href="/newsletter">Newsletter »</a></h1>
-          </div>
-        <div class="column-p">
-          <h1><a href="/contact">Contact »</a></h1>
-          </div>
-        </div>  
-			<div class="row">
-        <div class="column-p">
-          <h1><a href="/discord">Discord »</a></h1>
-          </div>
-        <div class="column-p">
-          <h1><a href="/shop">Shop »</a></h1>
-          </div>
-        </div>  
+
+      <a href="aboutus" class="nodeco center" title="About the Company">
+        <img src="/images/icons/about.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="50px" height="50px" alt="briefcase icon">
+        <h2>About the Company</h2>
+      </a>
+      
+      <hr class="space">
+
+      <a href="contact" class="nodeco center" title="Contact Us">
+        <img src="/images/icons/contact.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="50px" height="50px" alt="text message bubble icon">
+        <h2>Contact Us</h2>
+      </a>
+        
+      <hr class="space">
+
+      <a href="shop" class="nodeco center" title="Shop our Merch">
+      <img src="/images/icons/shop.svg" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(96deg) brightness(103%) contrast(102%);" width="50px" height="50px" alt="shopping bag icon">
+      <h2>Shop our Merch</h2>
+      
+      <hr class="space">
+
+    </div>
+
+    <script>
+      $('*').each((index, item) => {
+        if(item.hasAttribute('scrollto')) {
+          item.addEventListener('click', e => {
+            let y = $(window).scrollTop();
+            $('html, body').animate({
+              scrollTop: $(item.getAttribute('scrollto')).offset().top
+            });
+          });
+        }
+      });
+    </script>
   </body>
   <footer>
-    <hr class="largeline">
-    <div class="stupidfooter">
-      <p>
-				<a href="https://jcwyt.com/"><img src="jcwyt_logo_white.png" height="50px" width="50px"></a><br>
-				<a href="https://jcwyt.com/contact">Contact Us</a><br>
-    		<a href="https://jcwyt.com/terms">Terms and Conditions</a>
-			</p>
-    </div>
+    <p>Hey! Just so you know, you're on <a href="https://jcwyt.com" target="_blank">jcwyt.com</a>. Wanna <a href="contact">contact us</a> or read our <a href="terms">Terms and Conditions</a>?</p>
   </footer>
 </html>
