@@ -20,8 +20,6 @@
 /* Font, margins, background and text color */
 html {
   font-family: var(--mainfont);
-  margin-left: 25px;
-  margin-right: 25px;
   background-color: var(--background);
   color: var(--text);
 }
@@ -29,6 +27,10 @@ html {
 a {
   text-decoration: underline;
   color: var(--text);
+}
+/* Increases text line height */
+p {
+  line-height: 2;
 }
 /* Makes images undraggable and unselectable */
 img {
@@ -501,7 +503,6 @@ input[type=radio]:checked {
     height: auto;
   }
 }
-
 /* Accessability */
 
 :focus-visible {
