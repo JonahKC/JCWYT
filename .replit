@@ -50,3 +50,6 @@ pattern = "**/*.html"
 pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
   [languages.javascript.languageServer]
   start = ["typescript-language-server", "--stdio"]
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", ".config"]
