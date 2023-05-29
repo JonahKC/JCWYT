@@ -60,6 +60,8 @@ a:hover {
 .homepageCarousel a {
   margin: 10px;
   transition: ease-in-out .2s;
+  text-align:center;
+  text-decoration: none;
 }
 .homepageCarousel a:hover {
   transform: scale(1.1);
